@@ -1,0 +1,5 @@
+Componentes Compartilhados
+
+    - Botão arredondado (diversas classes para cores)
+    - Input de texto
+    - Botão de Login (o que leva para a tela de login)
