@@ -1,0 +1,38 @@
+.groupback-ellipses {
+    width: 100%;
+    height: 100%;
+  }
+  .ellipse-pink {
+    top: 0%;
+    right: 0%;
+    position: absolute;
+    display: flex;
+  }
+  
+  .ellipse-orange {
+    top: 0%;
+    left: 40%;
+    position: absolute;
+    display: flex;
+  }
+  
+  .ellipse-purple {
+    bottom: 0%;
+    left: 0%;
+    position: absolute;
+    display: flex;
+  }
+  
+  .ellipse-cyan {
+    bottom: 0%;
+    right: 0%;
+    position: absolute;
+    display: flex;
+  }
+  
+  .ellipse-yellow {
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    display: flex;
+  }

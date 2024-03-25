@@ -1,0 +1,6 @@
+            ATUALIZAR
+---------------------------------
+
+git pull
+
+git checkout P5F-25
