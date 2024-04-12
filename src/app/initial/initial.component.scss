@@ -1,0 +1,35 @@
+@import url('../app.component.scss');
+
+::-webkit-input-placeholder{
+    font-style: italic;
+    padding-left: 1vh;
+}
+
+.logo-image {
+    width: 50vw;
+    height: 30vh;
+}
+
+.login-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-style {
+    width: 45vw;
+    height: 5vh;
+    border-width: thin;
+    border-color: #666666;
+    border-radius: 10px;
+}
+
+.button-style {
+    margin-top: 5vh;
+    width: 45vw;
+    height: 5vh;
+    background-color: #FFB84C;
+    border-radius: 30px;
+    opacity: 80%;
+    color: #FFFFFF;
+}
