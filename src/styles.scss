@@ -39,3 +39,26 @@ $ziuQuiz_Frontend-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// * * * * * * * * * * * *
+// *                     *
+// *   Estilos ziuQuiz   *
+// *                     *
+// * * * * * * * * * * * *
+
+.bg-image {
+  background-image: url('assets/images/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html{
+  font-family: Poppins;
+}

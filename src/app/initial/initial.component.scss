@@ -22,6 +22,8 @@
     border-width: thin;
     border-color: #666666;
     border-radius: 10px;
+    font-style: italic;
+    font-size: large;
 }
 
 .button-style {
@@ -32,13 +34,36 @@
     border-radius: 30px;
     opacity: 80%;
     color: #FFFFFF;
+    font-size: x-large;
+}
+
+.button-style:hover {
+    background-color: #f3a339;
+}
+
+.button-style:active {
+    background-color: #f8ad4a
 }
 
 .login-button {
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: xx-large;
     height: 3vh;
+    position: absolute;
+    top: 5vh;
+    right: 4vw;
+    border-radius: 30px;
+    padding: 2.5rem;
+    padding-left: 1.5rem;
+}
+
+.login-button:hover {
+    background-color: #f5f5f5;
+}
+
+.login-button:active {
+    background-color: #ebebeb;
 }
 
 .mat-icon {
