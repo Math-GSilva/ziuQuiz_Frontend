@@ -6,5 +6,7 @@ export const routes: Routes = [
     {'path': 'register', 
     loadChildren: () => import('./register/register.module').then(m => m.RegisterModule)},
     {'path': 'login', 
-    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)}
+    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
+    {'path': 'recoverPassword', 
+    loadChildren: () => import('./recover-password/recover-password.module').then(m => m.RecoverPasswordModule)}
 ];
