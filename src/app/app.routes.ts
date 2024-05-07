@@ -8,5 +8,7 @@ export const routes: Routes = [
     {'path': 'login', 
     loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
     {'path': 'homepage', 
-    loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule)}
+    loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule)},
+    {'path': 'userpage',
+    loadChildren: () => import('./userpage/userpage.module').then(m => m.UserpageModule)}
 ];
