@@ -7,8 +7,10 @@ export const routes: Routes = [
     loadChildren: () => import('./register/register.module').then(m => m.RegisterModule)},
     {'path': 'login', 
     loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
+    {'path': 'recoverPassword', 
+    loadChildren: () => import('./recover-password/recover-password.module').then(m => m.RecoverPasswordModule)},
     {'path': 'homepage', 
     loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule)},
     {'path': 'userpage',
-    loadChildren: () => import('./userpage/userpage.module').then(m => m.UserpageModule)}
+    loadChildren: () => import('./userpage/userpage.module').then(m => m.UserpageModule)},
 ];
