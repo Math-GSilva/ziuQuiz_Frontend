@@ -8,5 +8,7 @@ export const routes: Routes = [
     {'path': 'login', 
     loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
     {'path': 'recoverPassword', 
-    loadChildren: () => import('./recover-password/recover-password.module').then(m => m.RecoverPasswordModule)}
+    loadChildren: () => import('./recover-password/recover-password.module').then(m => m.RecoverPasswordModule)},
+    {'path': 'homePage', 
+    loadChildren: () => import('./home-page/home-page.module').then(m => m.HomePageModule)}
 ];

@@ -9,3 +9,24 @@
     stroke: #FFB84C;
     border-width: thick;
 }
+
+.app-card {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 95vw;
+    height: 95vh;
+    border-radius: 1%;
+    stroke: #FFB84C;
+    border-width: thick;
+    padding: 1vh 3vw 1vh 3vw;
+}
+
+.button-add-quiz {
+    width: 4vw;
+    height: 3vh;
+    background-color: #FFB84C;
+    border-radius: 30px;
+    opacity: 80%;
+    color: #FFFFFF;
+    font-size: xx-large;
+}
