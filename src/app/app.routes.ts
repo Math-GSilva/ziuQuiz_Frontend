@@ -9,9 +9,7 @@ export const routes: Routes = [
     loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
     {'path': 'recoverPassword', 
     loadChildren: () => import('./recover-password/recover-password.module').then(m => m.RecoverPasswordModule)},
-    {'path': 'homePage', 
-    loadChildren: () => import('./home-page/home-page.module').then(m => m.HomePageModule)}
-    {'path': 'homepage', 
+    {'path': 'homepage',
     loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule)},
     {'path': 'userpage',
     loadChildren: () => import('./userpage/userpage.module').then(m => m.UserpageModule)},
