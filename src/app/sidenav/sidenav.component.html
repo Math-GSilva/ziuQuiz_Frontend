@@ -1,0 +1,75 @@
+<mat-sidenav-container class="sidenav-container">
+
+    <mat-sidenav position="end" #sidenav class="sidenav" mode="over">
+        <div class="sidenav-style">
+            <button class="profile-button" routerLink="/userpage">
+                <mat-icon class="mat-icon icon-profile" aria-hidden="false" fontIcon="perm_identity"/>
+                <p class="profile-button-text">Meu perfil</p>
+            </button>
+            <button class="sidenav-button">
+                <mat-icon class="mat-icon icon-sidenav" aria-hidden="false" fontIcon="star"/>
+                <p class="sidenav-button-text">Favoritos</p>
+            </button>
+            <button class="sidenav-button">
+                <mat-icon class="mat-icon icon-sidenav" aria-hidden="false" fontIcon="auto_awesome_mosaic"/>
+                <p class="sidenav-button-text">Coleção</p>
+            </button>
+            <button class="sidenav-button">
+                <mat-icon class="mat-icon icon-sidenav" aria-hidden="false" fontIcon="add_circle"/>
+                <p class="sidenav-button-text">Criar Quiz</p>
+            </button>
+            <button class="sidenav-button">
+                <mat-icon class="mat-icon icon-sidenav" aria-hidden="false" fontIcon="leaderboard"/>
+                <p class="sidenav-button-text">Rankings</p>
+            </button>
+            <button class="sidenav-button">
+                <mat-icon class="mat-icon icon-sidenav" aria-hidden="false" fontIcon="shield"/>
+                <p class="sidenav-button-text">Denuncias</p>
+            </button>
+            <span class="sidenav-spacer"></span> 
+            <button class="logout-button">
+                <mat-icon class="mat-icon icon-logout" aria-hidden="false" fontIcon="logout"/>
+                <p class="logout-button-text">Log Out</p>
+            </button>
+        </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="screen-style">
+            <mat-card class="big-card">
+                <div class="grid-container">
+                    <div class="grid-item grid-center item1">
+                        <a routerLink="/homepage">
+                            <img class="logo-image" src="../../assets/images/Logo_v2.svg">
+                        </a>
+                    </div>
+                    <div class="grid-item grid-center item2">
+                    </div>
+                    <div class="grid-item grid-center item3">
+                        <form>
+                            <div class="search-style">
+                                <input class="search-input-style" type="search">
+                                <button type="submit">
+                                    <mat-icon class="mat-icon" aria-hidden="false" fontIcon="search"/>
+                                </button>
+                            </div>
+                        </form>
+                    </div>  
+                    <div class="grid-item grid-center item4">
+                        <button class="navadd-style">+</button>
+                    </div>
+                    <div class="grid-item grid-center item5">
+                        <button class="user-button" (click)="sidenav.toggle()">
+                            <mat-icon class="mat-icon" aria-hidden="false" fontIcon="person_outline"/>
+                            <span class="ml-1">User</span>
+                        </button>
+                    </div>
+                    <div class="grid-item item6">
+                        <ng-content></ng-content>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
