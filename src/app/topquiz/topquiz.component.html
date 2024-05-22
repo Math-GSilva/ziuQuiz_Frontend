@@ -1,16 +1,8 @@
-<form>
-    <mat-card class="login-card">
-        <div class="grid-container">
-            <div class="grid-item item1">
-                <img class="logo-image" src="../../assets/images/Logo_v2.svg">
-            </div>
-            <div class="grid-item item2">
-                <input class="input-style" type="text">
-            </div>
-            <div class="grid-item item3">
-                <button class="button-style" type="submit"> + </button>
-            </div>  
-
-        </div>
-    </mat-card>
-</form>
+<app-sidenav>
+    <div class="grid-item itemTitle">
+        <label>Top Quizzes da Semana</label><br>
+    </div>
+    <div class="row" *ngFor="let quiz of quizzes">
+        <app-purplecard/>
+    </div>
+</app-sidenav>
