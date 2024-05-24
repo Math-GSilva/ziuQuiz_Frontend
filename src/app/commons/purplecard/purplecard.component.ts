@@ -8,9 +8,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './purplecard.component.html',
   styleUrl: './purplecard.component.scss'
 })
-export class PurplecardComponent implements OnInit{
-  quizzes = Array(10).fill(0);
-  constructor() {}
-
-  ngOnInit(): void {}
+export class PurplecardComponent{
+  quizzes = new Array(10);
 }
