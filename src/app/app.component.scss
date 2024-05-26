@@ -21,6 +21,18 @@
     padding: 1vh 3vw 1vh 3vw;
 }
 
+.big-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 96vw;
+    height: 94vh;
+    border-radius: 1%;
+    stroke: #FFB84C;
+    border-width: thick;
+}
+
 .button-add-quiz {
     width: 4vw;
     height: 3vh;
