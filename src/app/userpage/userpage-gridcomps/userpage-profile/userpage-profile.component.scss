@@ -63,13 +63,17 @@
 }
 
 .userpage-profile-photoplaceholder{
-    height: 18vh;
-    width: 11vw;
-    margin-left: 20%;
+    height: 19vh;
+    width: 19vh;
+    margin-left: 24%;
 
-    background-color: #BC8BDA;
-    background-image: linear-gradient( #DEB9F4, #BC8BDA, #A459D1);
+    // background-color: #BC8BDA;
+    // background-image: linear-gradient( #DEB9F4, #BC8BDA, #A459D1);
     border-radius: 1.5vh;
+
+    // background-image: url(../../../../assets/images/pfp_placeholder.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .userpage-profile-username{
