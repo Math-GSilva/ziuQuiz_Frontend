@@ -71,6 +71,8 @@
     height: 94%;
     box-shadow: 0vw 0vw 2vh #EDEDED;
     border-radius: 3vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .userpage-clickables-showall{
@@ -92,4 +94,23 @@
 
 .userpage-clickables-showall-text{
     padding: 0.2vh;
+}
+
+.blank-card{
+    margin-left: 0.8vw;
+    margin-top: 1.2vh;
+    margin-bottom: 0rem;
+    margin-right: 0rem;
+    border-radius: 1rem;
+    opacity: 0%;
+}
+
+.blank-card-fav{
+    width: 12.5vw;
+    height: 13.2vh;
+}
+
+.blank-card-rank{
+    width: 12.5vw;
+    height: 21vh;
 }

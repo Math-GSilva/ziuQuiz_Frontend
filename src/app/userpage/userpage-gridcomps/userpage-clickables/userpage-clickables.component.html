@@ -3,7 +3,16 @@
         <p class="userpage-clickables-title">Rankings</p>
     </div>
     <div class="grid-item item2">
-        <div class="userpage-clickables-dispdiv"></div>
+        <div class="userpage-clickables-dispdiv">
+            @for (trophy of trophies; track $index){
+                @if (trophy.quiz) {
+                    <app-profile-rankcard [trophy]="trophy"/>
+                }
+                @else {
+                    <div class="blank-card blank-card-rank"></div>
+                }
+            }
+        </div>
     </div>
     <div class="grid-item item3">
         <div class="row-align">
@@ -14,7 +23,16 @@
         </div>
     </div>  
     <div class="grid-item item4">
-        <div class="userpage-clickables-dispdiv"></div>
+        <div class="userpage-clickables-dispdiv">
+            @for (quiz of favquizzes; track $index){
+                @if (quiz.name) {
+                    <app-favoritecard [quiz]="quiz"/>
+                }
+                @else {
+                    <div class="blank-card blank-card-fav"></div>
+                }
+            }
+        </div>
     </div>
     <div class="grid-item item5">
         <div class="row-align">
@@ -25,7 +43,16 @@
         </div>
     </div>
     <div class="grid-item item6">
-        <div class="userpage-clickables-dispdiv"></div>
+        <div class="userpage-clickables-dispdiv">
+            @for (quiz of colquizzes; track $index){
+                @if (quiz.name) {
+                    <app-colectioncard [quiz]="quiz"/>
+                }
+                @else {
+                    <div class="blank-card blank-card-fav"></div>
+                }
+            }
+        </div>
     </div>
     <div class="grid-item item7">
     </div>

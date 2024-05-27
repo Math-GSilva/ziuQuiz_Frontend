@@ -1,1 +1,77 @@
 @import url('../app.component.scss');
+@import url('../register/register.component.scss');
+ 
+.align-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-button {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 30px;
+    padding-left: 1.5rem;
+}
+
+.user-icon {
+    width: 3vw;
+    height: 4vh;
+    font-size: 40px;
+}
+
+.big-purple-card {
+    margin-top: 3vh;
+    background-image: linear-gradient( #DEB9F4, #BC8BDA, #A459D1);
+    width: 50vw;
+    height: 25vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 3vw;
+}
+
+.medium-purple-card {
+    margin-top: 3vh;
+    background-image: linear-gradient( #DEB9F4, #BC8BDA, #A459D1);
+    width: 37vw;
+    height: 25vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 3vw;
+}
+
+.small-purple-card {
+    background-image: linear-gradient( #DEB9F4, #BC8BDA, #A459D1);
+    width: 15vw;
+    height: 15vh;
+    border-radius: 10px;
+}
+
+.text-style {
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.options {
+    margin-top: 5vh;
+}
+
+.options-text {
+    color: #F266AB;
+    font-weight: bold;
+    font-size: large;
+}
+
+.see-all-text {
+    color: #696F79;
+}
+
+.homescreen-align{
+    margin-left: 3vw;
+    margin-right: 3vw;
+}

@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+import { User } from '../../../interface/user';
+import { CommonModule } from '@angular/common';
+import { MOCK_USER } from '../../../interface/testing/mock-user';
 
 @Component({
   selector: 'app-userpage-profile',
   standalone: true,
-  imports: [ MatIconModule ],
+  imports: [ MatIconModule, CommonModule ],
   templateUrl: './userpage-profile.component.html',
   styleUrl: './userpage-profile.component.scss'
 })
 export class UserpageProfileComponent {
-  username = "Nome Usuário";
-  quiz_created = "10";
-  quiz_completed = "200";
-  quiz_favorite = "7";
+  user: User = MOCK_USER[0];
 }
