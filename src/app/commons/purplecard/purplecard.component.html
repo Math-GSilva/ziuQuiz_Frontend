@@ -1,14 +1,8 @@
-<div class="container">
-  <div class="header"> 
-    <button class="back-button"> <!-- Seta para esquerda-->
-      <i class="fa fa-arrow-left"></i>
-    </button>
-    <h1>TOP QUIZZES DA SEMANA</h1>
-  </div>
-  <div class="cards">
-    <div class="card" *ngFor="let quiz of quizzes; let i = index">
-      <div class="card-rank">#{{i + 1}}</div>
-      <div class="card-content">Nome Quiz</div>
+<!-- <div class="card" *ngFor="let quiz of quizzes; let i = index"> -->
+<div class="card-object">
+    <div class="card-rank"><ng-content/></div>
+    <div class="card">
+        <div class="card-image" [ngStyle]="{'background-image': 'url(' + quiz.image + ')'}"></div>
+        <div class="card-content">{{quiz.name}}</div>
     </div>
-  </div>
 </div>

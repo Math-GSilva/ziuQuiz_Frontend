@@ -1,3 +1,15 @@
 <app-sidenav>
-    <app-purplecard/>
+        <div class="topquiz-container">
+            <button class="back-button"> <!-- Seta para esquerda-->
+                <i class="fa fa-arrow-left"></i>
+            </button>
+            <div class="topquiz-header"> 
+                <h1 class="topquiz-title">TOP QUIZZES DA SEMANA</h1>
+            </div>
+        </div>
+        <div class="cards">
+            @for (quiz of quizzes; track $index){
+                <app-purplecard [quiz]="quiz">#{{ $index + 1 }}</app-purplecard>
+            }
+        </div>
 </app-sidenav>

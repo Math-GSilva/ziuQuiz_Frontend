@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Quiz } from '../../interface/quiz';
 
 @Component({
   selector: 'app-purplecard',
@@ -9,5 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './purplecard.component.scss'
 })
 export class PurplecardComponent{
-  quizzes = new Array(10);
+  @Input() quiz!: Quiz;
 }

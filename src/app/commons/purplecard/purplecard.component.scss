@@ -1,86 +1,71 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
-body, html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  text-align: center;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  background: linear-gradient(to bottom, #cf6cfa, #cf6cfa, #cf6cfa);
-  border-radius: 10px;
-  padding: 10px;
-  width: 100%;
-  max-width: 2000px;
-  position: relative;
-}
-
-.back-button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2em;
-  cursor: pointer;
-  position: absolute;
-  left: 10px;
-}
-
-h1 {
-  background-color: #cf6cfa;
-  color: black;
-  padding: 20px;
-  border-radius: 20px;
-  font-size: 3em;
-  margin: 0;
-}
-
-.cards {
-  display: flex;
-  padding: 60px;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-}
+// body, html {
+//   height: 100%;
+//   margin: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 .card {
-  width: 220px;
+  width: 14vw;
   height: 210px;
   background-color: #cf6cfa;
   color: white;
-  border-radius: 10px;
+  border-radius: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  padding: 10px;
+  transition: 0.3s;
+  // padding: 10px;
 }
 
 .card-rank {
-  font-size: 1.5em;
+  color: black;
+  font-size: 1.8em;
   text-align: left;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  margin-bottom: 1vh;
+  transition: 0.3s;
 }
 
 .card-content {
   font-size: 1.5em;
   color: black;
   text-align: center;
-  margin-top: 170px;
+  // margin-top: 170px;
+  margin-bottom: 2vh;
+  text-wrap:nowrap;
+}
+
+.card-image{
+  width: 13vw;
+  height: 15vh;
+
+  margin-top: 2vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 2vh;
+  border-width:medium;
+  border-color: #FFFFFF;
+}
+
+.card:hover{
+  transform: scale(1.08);
+  cursor: pointer;
+
+  .card-rank{
+    font-size: 1.9em;
+    margin-bottom: 1.2vh;
+  }
+}
+
+.card:active{
+  transform: scale(1.05);
 }
