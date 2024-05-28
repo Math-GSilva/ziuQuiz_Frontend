@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomepageRoutingModule } from './homepage-routing.module';
+import { RecoverPasswordRoutingModule } from './recover-password-routing.module';
+
+
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    HomepageRoutingModule
+    RecoverPasswordRoutingModule
   ]
 })
-export class HomepageModule { }
+export class RecoverPasswordModule { }
