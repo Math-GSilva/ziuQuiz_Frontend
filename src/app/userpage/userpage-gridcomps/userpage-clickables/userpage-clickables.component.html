@@ -1,6 +1,11 @@
 <div class="grid-container">
     <div class="grid-item item1">
-        <p class="userpage-clickables-title">Rankings</p>
+        <div class="row-align">
+            <p class="userpage-clickables-title">Rankings</p>
+            <button class="userpage-clickables-showall" routerLink="/rankings">
+                <p class="userpage-clickables-showall-text">Ver todos</p>
+            </button>
+        </div>
     </div>
     <div class="grid-item item2">
         <div class="userpage-clickables-dispdiv">
@@ -17,7 +22,7 @@
     <div class="grid-item item3">
         <div class="row-align">
             <p class="userpage-clickables-title">Favoritos</p>
-            <button class="userpage-clickables-showall">
+            <button class="userpage-clickables-showall" routerLink="/favorites">
                 <p class="userpage-clickables-showall-text">Ver todos</p>
             </button>
         </div>
@@ -37,7 +42,7 @@
     <div class="grid-item item5">
         <div class="row-align">
             <p class="userpage-clickables-title">Coleção</p>
-            <button class="userpage-clickables-showall">
+            <button class="userpage-clickables-showall" routerLink="/collection">
                 <p class="userpage-clickables-showall-text">Ver todos</p>
             </button>
         </div>

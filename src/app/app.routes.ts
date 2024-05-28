@@ -21,4 +21,10 @@ export const routes: Routes = [
     loadChildren: () => import('./search-by-category/search-by-category.module').then(m => m.SearchByCategoryModule)},
     {'path': 'categories',
     loadChildren: () => import('./categories/categories.module').then(m => m.CategoriesModule)},
+    {'path': 'favorites',
+    loadChildren: () => import('./favorites/favorites.module').then(m => m.FavoritesModule)},
+    {'path': 'collection',
+    loadChildren: () => import('./collection/collection.module').then(m => m.CollectionModule)},
+    {'path': 'rankings',
+    loadChildren: () => import('./rankings/rankings.module').then(m => m.RankingsModule)},
 ];
