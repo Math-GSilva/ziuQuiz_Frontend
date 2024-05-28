@@ -1,4 +1,4 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+// @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 // body, html {
 //   height: 100%;
@@ -10,15 +10,16 @@
 
 .card {
   width: 14vw;
-  height: 210px;
+  height: 23vh;
   background-color: #cf6cfa;
+  background: linear-gradient(180deg, #cf6cfa 0%, #8c46bb 100%);
   color: white;
   border-radius: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
   position: relative;
   transition: 0.3s;
   // padding: 10px;
@@ -28,6 +29,7 @@
   color: black;
   font-size: 1.8em;
   text-align: left;
+  font-weight: 600;
   margin-bottom: 1vh;
   transition: 0.3s;
 }
@@ -36,6 +38,7 @@
   font-size: 1.5em;
   color: black;
   text-align: center;
+  font-weight: 600;
   // margin-top: 170px;
   margin-bottom: 2vh;
   text-wrap:nowrap;
@@ -57,7 +60,7 @@
 }
 
 .card:hover{
-  transform: scale(1.08);
+  transform: scale(1.07);
   cursor: pointer;
 
   .card-rank{
