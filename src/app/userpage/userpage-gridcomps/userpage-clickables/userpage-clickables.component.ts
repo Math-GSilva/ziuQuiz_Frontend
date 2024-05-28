@@ -5,11 +5,12 @@ import { CommonModule } from '@angular/common';
 import { ColectioncardComponent } from '../../../commons/colectioncard/colectioncard.component';
 import { MOCK_TROPHIES } from '../../../interface/testing/mock-trophies';
 import { ProfileRankcardComponent } from '../../../commons/profile-rankcard/profile-rankcard.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-userpage-clickables',
   standalone: true,
-  imports: [ CommonModule, FavoritecardComponent, ColectioncardComponent, ProfileRankcardComponent ],
+  imports: [ CommonModule, FavoritecardComponent, ColectioncardComponent, ProfileRankcardComponent, RouterModule ],
   templateUrl: './userpage-clickables.component.html',
   styleUrl: './userpage-clickables.component.scss'
 })

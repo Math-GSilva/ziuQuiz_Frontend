@@ -6,13 +6,13 @@ import { MOCK_QUIZ } from '../interface/testing/mock-quiz';
 import { SearchHeaderComponent } from '../commons/search-header/search-header.component';
 
 @Component({
-  selector: 'app-topquiz',
+  selector: 'app-foryou',
   standalone: true,
   imports: [ RouterModule, PurplecardComponent, SidenavComponent, SearchHeaderComponent ],
-  templateUrl: './topquiz.component.html',
-  styleUrl: './topquiz.component.scss'
+  templateUrl: './foryou.component.html',
+  styleUrl: './foryou.component.scss'
 })
-export class TopquizComponent {
+export class ForyouComponent {
   quizzes = this.fillQuizzes();
 
   fillQuizzes(): any[] {
@@ -39,5 +39,4 @@ export class TopquizComponent {
 
     return filledQuizzes.slice(0,10);
   }
-
 }

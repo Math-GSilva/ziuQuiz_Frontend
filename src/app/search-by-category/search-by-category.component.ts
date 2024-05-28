@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
+import { MOCK_QUIZ } from '../interface/testing/mock-quiz';
 import { RouterModule } from '@angular/router';
 import { PurplecardComponent } from '../commons/purplecard/purplecard.component';
 import { SidenavComponent } from '../sidenav/sidenav.component';
-import { MOCK_QUIZ } from '../interface/testing/mock-quiz';
 import { SearchHeaderComponent } from '../commons/search-header/search-header.component';
 
 @Component({
-  selector: 'app-topquiz',
+  selector: 'app-search-by-category',
   standalone: true,
   imports: [ RouterModule, PurplecardComponent, SidenavComponent, SearchHeaderComponent ],
-  templateUrl: './topquiz.component.html',
-  styleUrl: './topquiz.component.scss'
+  templateUrl: './search-by-category.component.html',
+  styleUrl: './search-by-category.component.scss'
 })
-export class TopquizComponent {
+export class SearchByCategoryComponent {
+  category = "Teste";
   quizzes = this.fillQuizzes();
 
   fillQuizzes(): any[] {
@@ -39,5 +40,4 @@ export class TopquizComponent {
 
     return filledQuizzes.slice(0,10);
   }
-
 }
