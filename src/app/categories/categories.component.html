@@ -1,0 +1,13 @@
+<app-sidenav>
+    <app-search-header>CATEGORIAS</app-search-header>
+    <div class="cards">
+        @for (category of categories; track $index){
+            @if (category.id) {
+                <app-categorycard [category]="category"/>
+            }
+            @else {
+                <div class="blank-card-purple"></div>
+            }
+        }
+    </div>
+</app-sidenav>
