@@ -5,7 +5,7 @@ import { Quiz } from '../../interface/quiz';
 @Component({
   selector: 'app-purplecard',
   standalone: true,
-  imports: [CommonModule],
+  imports: [ CommonModule ],
   templateUrl: './purplecard.component.html',
   styleUrl: './purplecard.component.scss'
 })
