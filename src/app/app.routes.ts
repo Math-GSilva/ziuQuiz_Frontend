@@ -27,4 +27,6 @@ export const routes: Routes = [
     loadChildren: () => import('./collection/collection.module').then(m => m.CollectionModule)},
     {'path': 'rankings',
     loadChildren: () => import('./rankings/rankings.module').then(m => m.RankingsModule)},
+    {'path': 'quizinfo',
+    loadChildren: () => import('./quizinfo/quizinfo.module').then(m => m.QuizinfoModule)},
 ];
