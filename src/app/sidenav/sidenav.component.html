@@ -14,7 +14,7 @@
                 <mat-icon class="mat-icon icon-sidenav" aria-hidden="false" fontIcon="auto_awesome_mosaic"/>
                 <p class="sidenav-button-text">Coleção</p>
             </button>
-            <button class="sidenav-button">
+            <button class="sidenav-button" routerLink="/quizCreation">
                 <mat-icon class="mat-icon icon-sidenav" aria-hidden="false" fontIcon="add_circle"/>
                 <p class="sidenav-button-text">Criar Quiz</p>
             </button>
@@ -56,7 +56,7 @@
                         </form>
                     </div>  
                     <div class="grid-item grid-center item4">
-                        <button class="navadd-style">+</button>
+                        <button class="navadd-style" routerLink="/quizCreation">+</button>
                     </div>
                     <div class="grid-item grid-center item5">
                         <button class="user-button" (click)="sidenav.toggle()">

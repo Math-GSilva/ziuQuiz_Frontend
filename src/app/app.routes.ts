@@ -13,4 +13,6 @@ export const routes: Routes = [
     loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule)},
     {'path': 'userpage',
     loadChildren: () => import('./userpage/userpage.module').then(m => m.UserpageModule)},
+    {'path': 'quizCreation',
+    loadChildren: () => import('./quiz-creation/quiz-creation.module').then(m => m.QuizCreationModule)},
 ];
