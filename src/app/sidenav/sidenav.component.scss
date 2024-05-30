@@ -90,6 +90,7 @@
     border-radius: 30px;
     padding: 2.5rem;
     padding-left: 1.5rem;
+    margin-right: 2vw;
 }
 
 .user-button:hover {
@@ -103,7 +104,13 @@
 .mat-icon {
     width: 3vw;
     height: 4vh;
-    font-size: 40px;
+    font-size: 4vh;
+}
+
+.mat-icon-user{
+    width: 3vw;
+    height: 5vh;
+    font-size: 5vh;
 }
 
 .navadd-style{

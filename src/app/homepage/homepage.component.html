@@ -34,8 +34,10 @@
                     <p class="options-text">CATEGORIAS</p>
                     <u class="see-all-text" routerLink="/categories">VER TUDO</u>
                 </div>
-                <div class="small-purple-card">
-        
+                <div class="cards">
+                    @for (category of categories; track $index){
+                        <app-main-categorycard [category]="category"/>
+                    }
                 </div>
             </div>
             <div class="options">
@@ -43,8 +45,10 @@
                     <p class="options-text">MELHORES ESCOLHAS PARA VOCÊ</p>
                     <u class="see-all-text" routerLink="/foryou">VER TUDO</u>
                 </div>
-                <div class="small-purple-card">
-        
+                <div class="cards">
+                    @for (quiz of bestpicks; track $index){
+                        <app-main-purplecard [quiz]="quiz"/>
+                    }
                 </div>
             </div>
         </div>
