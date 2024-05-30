@@ -96,3 +96,14 @@
     margin-left: 3vw;
     margin-right: 3vw;
 }
+
+.cards {
+    width: 90vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    row-gap: 1vh;
+    column-gap: 1.4vw;
+    // row-gap: 10vw;
+    // column-gap: 1vh;
+}
