@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { ResultsGuard } from './guards/results.guard';
 
 export const routes: Routes = [
     {'path': '', 
@@ -27,4 +28,9 @@ export const routes: Routes = [
     loadChildren: () => import('./collection/collection.module').then(m => m.CollectionModule)},
     {'path': 'rankings',
     loadChildren: () => import('./rankings/rankings.module').then(m => m.RankingsModule)},
+    {'path': 'playquiz',
+    loadChildren: () => import('./playquiz/playquiz.module').then(m => m.PlayquizModule)},
+    {'path': 'results',
+    loadChildren: () => import('./results/results.module').then(m => m.ResultsModule)},
+    //loadChildren: () => import('./results/results.module').then(m => m.ResultsModule), canActivate: [ResultsGuard]},
 ];

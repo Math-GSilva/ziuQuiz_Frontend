@@ -1,0 +1,162 @@
+@import url('../app.component.scss');
+
+/* * * * * * * * *\
+    Grid  Start
+\* * * * * * * * */
+
+.grid-container {
+    display: grid;
+    width: 64vw;
+    height: 100%;
+    margin-top: 2vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10vh 8% auto 24% 24%;
+}
+  
+.grid-item {
+    height: 100%;
+}
+
+.grid-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Logo
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+//Progress
+.item2 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1vh;
+}
+//Image
+.item3 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+//Option 1
+.item4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+//Option 2
+.item5 {
+    grid-column: 2;
+    grid-row: 4;
+}
+//Option 3
+.item6 {
+    grid-column: 1;
+    grid-row: 5;
+}
+//Option 4
+.item7 {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+/* * * * * * * * *\
+     Grid  End
+\* * * * * * * * */
+
+.logo-image {
+    height: 10vh;
+}
+
+.playquiz-image {
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 70%;
+    border-radius: 3vh;
+}
+
+.playquiz-progressnumb {
+    width: 3vw;
+
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: right;
+
+    color: #696F79;
+    margin-bottom: 0px;
+}
+
+.playquiz-progressbar {
+    height: 1.5vh;
+    width: 70%;
+
+    margin-left: 1vw;
+
+    border-radius: 0.75vh;
+    background-color: #dfdfdf;
+}
+
+.playquiz-progressbar-fill{
+    height: 100%;
+
+    border-radius: 0.75vh;
+    background-color: #b3b3b3;
+
+    transition: 0.5s;
+}
+
+.playquiz-resp-button{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #454b55;
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: center;
+
+    border-radius: 2vh;
+    user-select: none;
+
+    transition: 0.3s;
+}
+
+.playquiz-resp-button:hover{
+    transform: scale(1.02);
+}
+
+.playquiz-resp-button:active{
+    transform: scale(0.99);
+}
+
+.grid-buttons{
+    padding: 2vh;
+}
+
+.grid-top-buttons{
+    padding-top: 4vh;
+}
+
+.grid-bot-buttons{
+    padding-bottom: 4vh;
+}
+
+.playquiz-question{
+    position: absolute;
+
+    margin-bottom: 0px;
+
+    font-weight: bold;
+    font-size: 4vh;
+    text-align: justify;
+}
