@@ -6,9 +6,13 @@ Esse projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 ## Membros da equipe:
 
 Matheus Gabriel da Silva
+
 Larissa Hoffmann de Souza
+
 Eduardo da Maia Haak
+
 Lukas Thiago Rodrigues
+
 Mateus Akira de Oliveira Muranaka
 
 
