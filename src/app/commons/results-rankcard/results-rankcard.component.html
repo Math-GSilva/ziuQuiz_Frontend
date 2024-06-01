@@ -1,0 +1,9 @@
+<div class="results-rank-card">
+    <div class="results-rank-text-container">
+        <p class="results-rank-text results-rank-center-text results-rank-dark-text results-rank-bold-text results-rank-text-rank">{{ index + 1 }}#</p>
+        <p class="results-rank-text results-rank-text-name">{{ score.name }}</p>
+        <p class="results-rank-text results-rank-center-text results-rank-bold-text results-rank-text-score">{{ score.score }}</p>
+    </div>
+    <div class="results-rank-tint" [ngStyle]="{'opacity': getOpacity()}"></div>
+    
+</div>

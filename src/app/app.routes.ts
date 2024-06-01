@@ -31,6 +31,6 @@ export const routes: Routes = [
     {'path': 'playquiz',
     loadChildren: () => import('./playquiz/playquiz.module').then(m => m.PlayquizModule)},
     {'path': 'results',
-    loadChildren: () => import('./results/results.module').then(m => m.ResultsModule)},
-    //loadChildren: () => import('./results/results.module').then(m => m.ResultsModule), canActivate: [ResultsGuard]},
+    //loadChildren: () => import('./results/results.module').then(m => m.ResultsModule)},
+    loadChildren: () => import('./results/results.module').then(m => m.ResultsModule), canActivate: [ResultsGuard]},
 ];
