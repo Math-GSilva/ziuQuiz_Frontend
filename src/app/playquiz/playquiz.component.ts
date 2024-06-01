@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NavigationStart, Router, RouterModule } from '@angular/router';
 import { SidenavComponent } from '../sidenav/sidenav.component';
 import { MatCard } from '@angular/material/card';
@@ -14,7 +14,7 @@ import { ScoreService } from '../services/score.service';
   templateUrl: './playquiz.component.html',
   styleUrl: './playquiz.component.scss'
 })
-export class PlayquizComponent {
+export class PlayquizComponent implements OnInit {
   quiz = this.pullQuiz();
 
   state = 0;
@@ -147,7 +147,8 @@ export class PlayquizComponent {
     this.shouldConfirmExit = false;
   }
 
-  ngOnStart(){
+  ngOnInit(){
     this.scoreService.resetScore();
+    console.log("QUIZ INICADO");
   }
 }

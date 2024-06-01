@@ -1,20 +1,30 @@
 <app-sidenav>
     <div class="grid-container">
         <div class="grid-item grid-center item1">
-            <p>Nome Quiz</p>
+            <p class="results-title-text">Nome Quiz</p>
         </div>
         <div class="grid-item grid-center item2">
-            <p>Ranking Title</p>
+            <p class="results-title-text">Ranking</p>
         </div>
-        <div class="grid-item grid-center item3">
-            <p>Left Content</p>
-            <p>{{ score }}</p>
+        <div class="grid-item item3">
+            <div class="results-quiz-image" [ngStyle]="{'background-image': 'url(' + quiz.image + ')'}"></div>
+            <p class="results-rank-text results-rank-text-spacing">Sua pontuação no Quiz foi: <span class="results-rank-text-playerscore">{{ score }} pontos</span></p>
+            <p class="results-rank-text results-rank-text-spacing">Você está em <span class="results-rank-dark-text results-rank-bold-text">#{{ player_rank }}</span> no Ranking!</p>
+            <div class="results-rank-player-card">
+                <p class="results-rank-text results-rank-center-text results-rank-dark-text results-rank-bold-text results-rank-text-rank">{{ player_rank }}#</p>
+                <p class="results-rank-text results-rank-dark-text results-rank-text-name">{{ player_score.name }}</p>
+                <p class="results-rank-text results-rank-center-text results-rank-dark-text results-rank-bold-text results-rank-text-score">{{ score }}</p>
+            </div>
         </div>
         <div class="grid-item grid-center item4">
-            <p>Rankings</p>
+            @for (score of scores; track $index){
+                <app-results-rankcard [score]="score" [index]="$index"/>
+            }
         </div>
         <div class="grid-item grid-center item5">
-            <p>Jogar Novamente</p>
+            <button class="results-quiz-playagain">
+                <p class="results-quiz-playagain-text">Jogar Novamente</p>
+            </button>
         </div>
     </div>
 </app-sidenav>

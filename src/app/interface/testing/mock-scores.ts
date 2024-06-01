@@ -1,6 +1,6 @@
 import { Score } from "../score";
 
-export const MOCK_TROPHIES: Score[] = [
+export const MOCK_SCORE: Score[] = [
     {
         name: "Player 1",
         score: 600,
