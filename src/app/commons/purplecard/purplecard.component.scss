@@ -1,0 +1,75 @@
+// @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+// body, html {
+//   height: 100%;
+//   margin: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.card {
+  width: 14vw;
+  height: 23vh;
+  background-color: #cf6cfa;
+  background: linear-gradient(180deg, #cf6cfa 0%, #8c46bb 100%);
+  color: white;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: 0.3s;
+  // padding: 10px;
+}
+
+.card-rank {
+  color: black;
+  font-size: 1.8em;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 1vh;
+  transition: 0.3s;
+}
+
+.card-content {
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  // margin-top: 170px;
+  margin-bottom: 2vh;
+  text-wrap:nowrap;
+  user-select: none;
+}
+
+.card-image{
+  width: 13vw;
+  height: 15vh;
+
+  margin-top: 2vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 2vh;
+  border-width:medium;
+  border-color: #FFFFFF;
+}
+
+.card:hover{
+  transform: scale(1.07);
+  cursor: pointer;
+
+  .card-rank{
+    font-size: 1.9em;
+    margin-bottom: 1.2vh;
+  }
+}
+
+.card:active{
+  transform: scale(1.04);
+}

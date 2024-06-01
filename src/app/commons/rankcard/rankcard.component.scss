@@ -1,0 +1,141 @@
+.profile-rank-card-container{
+    width: 14vw;
+    height: 23vh;
+
+    margin-left: 0.8vw;
+    margin-top: 1.2vh;
+    margin-bottom: 0rem;
+    margin-right: 0rem;
+
+    border-radius: 1rem;
+    position: relative;
+
+    transition: 0.2s;
+}
+
+.card-container-gold{
+    background-color: #FFB84C;
+}
+
+.card-container-silver{
+    background-color: #a3b3c9;
+}
+
+.card-container-bronze{
+    background-color: #be5543;
+}
+
+.profile-rank-card-text{
+    width: 100%;
+
+    margin-bottom: 0rem;
+
+    position: absolute;
+    bottom: 0rem;
+    opacity: 0%;
+
+    text-align: center;
+    font-size: 2.4vh;
+    color: #ffffff;
+
+    transition: 0.2s;
+    user-select: none;
+}
+
+.profile-rank-card-tint{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 1rem;
+
+    transition: 0.2s;
+}
+
+.card-tint-gold{
+    background-image: linear-gradient(to bottom, #ffb74c00, #e9882d);
+}
+
+.card-tint-silver{
+    background-image: linear-gradient(to bottom, #ffb74c00, #7f9bc2);
+}
+
+.card-tint-bronze{
+    background-image: linear-gradient(to bottom, #ffb74c00, #b3412d);
+}
+
+.profile-rank-medal{
+    width: 14vh;
+    height: 14vh;
+
+    margin-top: 2vh;
+
+    // top: 3.8vh;
+    left: 50%;
+    transform: translateX(-50%); 
+
+    position: absolute;
+
+    transition: 0.2s;
+    user-select: none;
+}
+
+.profile-rank-card-container:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    
+    .profile-rank-card-text{
+        margin-bottom: 1.4vh;
+    }
+}
+
+.profile-rank-card-container:active{
+    transform: scale(1.05);
+}
+
+.card {
+    width: 14vw;
+    height: 23vh;
+    background-color: #cf6cfa;
+    background: linear-gradient(180deg, #cf6cfa 0%, #8c46bb 100%);
+    color: white;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: 0.3s;
+    // padding: 10px;
+  }
+
+  .card-image{
+    width: 13vw;
+    height: 15vh;
+  
+    margin-top: 2vh;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    border-radius: 1vh;
+
+    opacity: 60%;
+  }
+
+  .card-content {
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    // margin-top: 170px;
+    margin-bottom: 2vh;
+    text-wrap:nowrap;
+    user-select: none;
+  }

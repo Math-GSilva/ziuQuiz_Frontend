@@ -1,0 +1,53 @@
+<mat-card class="big-card">
+    <div class="grid-container">
+        <!-- Logo -->
+        <div class="grid-item grid-center item1">
+            <a routerLink="/homepage">
+                <img class="logo-image" src="../../assets/images/Logo_v2.svg">
+            </a>
+        </div>
+
+        <!-- Progresso -->
+        <div class="grid-item grid-center item2">
+            <p class="playquiz-progressnumb">{{ current_numb + 1 }}/{{ total_numb }}</p>
+            <div class="playquiz-progressbar">
+                <div class="playquiz-progressbar-fill" [ngStyle]="{'width': getProgressWidth()}"></div>
+            </div>
+        </div>
+
+        <!-- Pergunta / Imagem -->
+        <div class="grid-item grid-center item3">
+            <div class="playquiz-image" [ngStyle]="{'background-image': 'url(' + quiz.image + ')'}"></div>
+            <p class="playquiz-question">{{ quiz.questions[current_numb] }}</p>
+        </div>
+
+        <!-- Botão Amarelo -->
+        <div class="grid-item grid-center grid-buttons grid-top-buttons item4">
+            <div class="playquiz-resp-button" (click)="selectAnswer(0)" [ngStyle]="{'background-color': getButtonColor(0)}">
+                {{ quiz.answers[current_numb][0] }}
+            </div>
+        </div>
+
+        <!-- Botão Rosa -->
+        <div class="grid-item grid-center grid-buttons grid-top-buttons item5">
+            <div class="playquiz-resp-button" (click)="selectAnswer(1)" [ngStyle]="{'background-color': getButtonColor(1)}">
+                {{ quiz.answers[current_numb][1] }}
+            </div>
+        </div>
+
+        <!-- Botão Azul -->
+        <div class="grid-item grid-center grid-buttons grid-bot-buttons item6">
+            <div class="playquiz-resp-button" (click)="selectAnswer(2)" [ngStyle]="{'background-color': getButtonColor(2)}">
+                {{ quiz.answers[current_numb][2] }}
+            </div>
+        </div>
+
+        <!-- Botão Roxo -->
+        <div class="grid-item grid-center grid-buttons grid-bot-buttons item7">
+            <div class="playquiz-resp-button" (click)="selectAnswer(3)" [ngStyle]="{'background-color': getButtonColor(3)}">
+                {{ quiz.answers[current_numb][3] }}
+            </div>
+        </div>
+    </div>
+</mat-card>
+

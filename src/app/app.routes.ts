@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { ResultsGuard } from './guards/results.guard';
 
 export const routes: Routes = [
     {'path': '', 
@@ -15,4 +16,23 @@ export const routes: Routes = [
     loadChildren: () => import('./userpage/userpage.module').then(m => m.UserpageModule)},
     {'path': 'quizCreation',
     loadChildren: () => import('./quiz-creation/quiz-creation.module').then(m => m.QuizCreationModule)},
+    {'path': 'topquiz',
+    loadChildren: () => import('./topquiz/topquiz.module').then(m => m.TopquizModule)},
+    {'path': 'foryou',
+    loadChildren: () => import('./foryou/foryou.module').then(m => m.ForyouModule)},
+    {'path': 'searchByCategory',
+    loadChildren: () => import('./search-by-category/search-by-category.module').then(m => m.SearchByCategoryModule)},
+    {'path': 'categories',
+    loadChildren: () => import('./categories/categories.module').then(m => m.CategoriesModule)},
+    {'path': 'favorites',
+    loadChildren: () => import('./favorites/favorites.module').then(m => m.FavoritesModule)},
+    {'path': 'collection',
+    loadChildren: () => import('./collection/collection.module').then(m => m.CollectionModule)},
+    {'path': 'rankings',
+    loadChildren: () => import('./rankings/rankings.module').then(m => m.RankingsModule)},
+    {'path': 'playquiz',
+    loadChildren: () => import('./playquiz/playquiz.module').then(m => m.PlayquizModule)},
+    {'path': 'results',
+    //loadChildren: () => import('./results/results.module').then(m => m.ResultsModule)},
+    loadChildren: () => import('./results/results.module').then(m => m.ResultsModule), canActivate: [ResultsGuard]},
 ];

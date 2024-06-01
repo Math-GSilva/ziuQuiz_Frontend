@@ -1,0 +1,8 @@
+<app-sidenav>
+    <app-search-header>TOP QUIZZES DA SEMANA</app-search-header>
+        <div class="cards">
+            @for (quiz of quizzes; track $index){
+                <app-purplecard [quiz]="quiz">#{{ $index + 1 }}</app-purplecard>
+            }
+        </div>
+</app-sidenav>

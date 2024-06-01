@@ -1,0 +1,43 @@
+@import url('../app.component.scss');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.itemTitle {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    // width: 1145px;
+    // height: 87px;
+    // left: 102px;
+    // top: 141px;
+    background: linear-gradient(180deg, #DEB9F4 0%, #BC8BDA 50.99%, #A459D1 100%);
+    border-radius: 15px;
+}
+
+.cards {
+  display: flex;
+  padding-top: 2vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 1vh;
+  column-gap: 1.4vw;
+}
+
+.topquiz-body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blank-card-purple{
+    width: 12.5vw;
+    height: 13.2vh;
+    margin-left: 0.8vw;
+    margin-top: 1.2vh;
+    margin-bottom: 0rem;
+    margin-right: 0rem;
+    border-radius: 1rem;
+    opacity: 0%;
+}

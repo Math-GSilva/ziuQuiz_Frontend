@@ -1,0 +1,8 @@
+<!-- <div class="card" *ngFor="let quiz of quizzes; let i = index"> -->
+<div class="card-object">
+    <div class="card-rank"><ng-content/></div>
+    <div class="card">
+        <div class="card-image" [ngStyle]="{'background-image': 'url(' + quiz.image + ')'}"></div>
+        <div class="card-content">{{quiz.name}}</div>
+    </div>
+</div>

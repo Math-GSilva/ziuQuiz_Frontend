@@ -1,0 +1,32 @@
+@import url('../app.component.scss');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.itemTitle {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    // width: 1145px;
+    // height: 87px;
+    // left: 102px;
+    // top: 141px;
+    background: linear-gradient(180deg, #DEB9F4 0%, #BC8BDA 50.99%, #A459D1 100%);
+    border-radius: 15px;
+}
+
+.cards {
+  display: flex;
+  padding-top: 4vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 4vh;
+  column-gap: 4vw;
+}
+
+.topquiz-body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,45 @@
+.topquiz-container {
+    text-align: center;
+    padding: 1vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    display: flex;
+    //flex-direction: column;
+    align-items: center;
+  }
+  
+  .topquiz-header {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    background: linear-gradient(180deg, #cf6cfa 0%, #8c46bb 100%);
+    border-radius: 2vh;
+    width: 100%;
+    max-width: 200%;
+    position: relative;
+    margin-left: 1vw;
+    margin-right: calc(1vw + 2.5em);
+  }
+  
+  .topquiz-title {
+    // background-color: #cf6cfa;
+    color: black;
+    font-weight: bold;
+    // padding: 20px;
+    // border-radius: 20px;
+    font-size: 3em;
+    margin: 0;
+    user-select: none;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: #A459D1;
+    font-size: 2.5em;
+    cursor: pointer;
+    // position: absolute;
+    // left: 10px;
+    float: left;
+  }

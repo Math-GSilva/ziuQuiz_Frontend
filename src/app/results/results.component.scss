@@ -1,0 +1,160 @@
+/* * * * * * * * *\
+    Grid  Start
+\* * * * * * * * */
+
+$container-width: 82vw;
+
+.grid-container {
+    display: grid;
+    width: $container-width;
+    height: 100%;
+    margin-left: calc(50% - ( $container-width / 2 ) );
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 12% auto 20%;
+}
+
+.grid-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Nome Quiz
+.item1 {
+    grid-column: 1;
+    grid-row: 1;
+
+    padding-left: 1.2vw;
+
+    justify-content: left;
+    align-items: left;
+}
+//Ranking Title
+.item2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+//Left Content
+.item3 {
+    grid-column: 1;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+}
+//Rankings
+.item4 {
+    grid-column: 2;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+}
+//Jogar Novamente
+.item5 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+
+    justify-content: right;
+    align-items: right;
+}
+
+/* * * * * * * * *\
+     Grid  End
+\* * * * * * * * */
+
+.results-title-text {
+    margin-bottom: 0px;
+
+    font-size: 4vh;
+    font-weight: bold;
+
+    color: #696F79;
+}
+
+.results-quiz-image {
+    width: 100%;
+    height: 28vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 70%;
+    border-radius: 3vh;
+}
+
+.results-rank-text {
+    font-size: 2.4vh;
+    color: #696F79;
+    text-align: left;
+    margin-bottom: 0px;
+} 
+
+.results-rank-dark-text {
+    color: #000000;
+}
+
+.results-rank-bold-text {
+    font-weight: bold;
+}
+
+.results-rank-center-text {
+    text-align: center;
+}
+
+.results-rank-text-playerscore {
+    font-size: 3.2vh;
+    font-weight: bold;
+    color: #A459D1;
+}
+
+.results-rank-text-spacing {
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+}
+
+.results-rank-text-rank {
+    width: 12%;
+}
+
+.results-rank-text-name {
+    width: 74%;
+    text-wrap: nowrap;
+    overflow: clip;
+}
+
+.results-rank-text-score {
+    width: 14%;
+}
+
+.results-rank-player-card {
+    width: 100%;
+    height: 6vh;
+
+    margin-top: 2vh;
+
+    background-color: #D2B6E3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2vh;
+
+    z-index: 1;
+}
+
+.results-quiz-playagain {
+    background-color: #2CD3E1;
+    border-radius: 3.2vh;
+}
+
+.results-quiz-playagain-text {
+    font-size: 2.4vh;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    padding: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}

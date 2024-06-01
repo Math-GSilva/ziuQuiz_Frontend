@@ -20,28 +20,35 @@
                         <p>FAÇA SEUS PROPRIOS QUIZZES</p>
                     </div>
                 </div>
-                <div class="medium-purple-card">
-                    <div class="text-style">
-                        <p>TOP QUIZZES DA SEMANA</p>
+                <a routerLink="/topquiz">
+                    <div class="medium-purple-card">
+                        <div class="purple-card-tint"></div>
+                        <div class="text-style">
+                            <p>TOP QUIZZES DA SEMANA</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="options">
                 <div class="align-between">
                     <p class="options-text">CATEGORIAS</p>
-                    <u class="see-all-text">VER TUDO</u>
+                    <u class="see-all-text" routerLink="/categories">VER TUDO</u>
                 </div>
-                <div class="small-purple-card">
-        
+                <div class="cards">
+                    @for (category of categories; track $index){
+                        <app-main-categorycard [category]="category"/>
+                    }
                 </div>
             </div>
             <div class="options">
                 <div class="align-between">
                     <p class="options-text">MELHORES ESCOLHAS PARA VOCÊ</p>
-                    <u class="see-all-text">VER TUDO</u>
+                    <u class="see-all-text" routerLink="/foryou">VER TUDO</u>
                 </div>
-                <div class="small-purple-card">
-        
+                <div class="cards">
+                    @for (quiz of bestpicks; track $index){
+                        <app-main-purplecard [quiz]="quiz"/>
+                    }
                 </div>
             </div>
         </div>

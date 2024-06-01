@@ -29,10 +29,11 @@
     opacity: 0%;
 
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 2.4vh;
     color: #ffffff;
 
     transition: 0.2s;
+    user-select: none;
 }
 
 .colection-card-tint{
@@ -54,8 +55,12 @@
     }
     
     .colection-card-text{
-        margin-bottom: 1rem;
+        margin-bottom: 1.2vh;
 
         opacity: 100%;
     }
+}
+
+.colection-card-container:active{
+    transform: scale(0.9);
 }
