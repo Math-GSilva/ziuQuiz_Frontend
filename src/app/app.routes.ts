@@ -18,7 +18,7 @@ export const routes: Routes = [
     loadChildren: () => import('./topquiz/topquiz.module').then(m => m.TopquizModule)},
     {'path': 'foryou',
     loadChildren: () => import('./foryou/foryou.module').then(m => m.ForyouModule)},
-    {'path': 'searchByCategory',
+    {'path': 'search',
     loadChildren: () => import('./search-by-category/search-by-category.module').then(m => m.SearchByCategoryModule)},
     {'path': 'categories',
     loadChildren: () => import('./categories/categories.module').then(m => m.CategoriesModule)},
