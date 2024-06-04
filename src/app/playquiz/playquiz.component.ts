@@ -59,8 +59,6 @@ export class PlayquizComponent implements OnInit {
     if( this.verifyAnswer(selection) ){
       const timernow = this.getMilliseconds();
 
-      // console.log( timernow - this.timerstart );
-
       if( timernow - this.timerstart <= 10 ){
         // Se demorar menos de 10 segundos o score será máximo
         this.scoreService.setScore(this.scoreService.getScore() + 200);
