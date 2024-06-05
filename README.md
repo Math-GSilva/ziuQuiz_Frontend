@@ -44,7 +44,7 @@ Para iniciar um servidor local, utilize o comando `ng serve` em terminal no ambi
 
 `/foryou`              tela que mostra quizzes baseado em sua atividade no site
 
-`/searchByCategory`    tela que mostra quizzes de certa categoria (será convertida para tela de pesquisa em geral)
+`/search`              tela que mostra quizzes resultados de pesquisa
 
 `/categories`          tela que mostra as categorias de quizzes
 
