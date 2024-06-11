@@ -13,7 +13,7 @@ import { SearchHeaderComponent } from '../commons/search-header/search-header.co
   styleUrl: './search-by-category.component.scss'
 })
 export class SearchByCategoryComponent {
-  category = "Teste";
+  term = "Teste";
   quizzes = this.fillQuizzes();
 
   fillQuizzes(): any[] {

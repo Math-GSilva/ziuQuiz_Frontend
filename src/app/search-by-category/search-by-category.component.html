@@ -1,8 +1,8 @@
 <app-sidenav>
-    <app-search-header>{{ category }}</app-search-header>
+    <app-search-header>{{ term }}</app-search-header>
     <div class="cards">
         @for (quiz of quizzes; track $index){
-            <app-purplecard [quiz]="quiz">#{{ $index + 1 }}</app-purplecard>
+            <app-purplecard [quiz]="quiz"/>
         }
     </div>
 </app-sidenav>
