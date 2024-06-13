@@ -1,0 +1,60 @@
+::ng-deep .dialog-panel-style {
+    width: 28vw;
+    height: 31vh;
+
+    .mat-mdc-dialog-surface{
+        background-color: #ffffff00 !important;
+        border-radius: 3vh !important;
+    }
+
+    .dialog-container{
+        width: 100;
+        height: 100%;
+
+        background-color: #FFFFFF;
+
+        border-width: 0.8vh;
+        border-radius: 3vh;
+
+        padding: 3vh;
+    }
+
+    h1{
+        width: 100%;
+
+        margin-bottom: 3vh;
+
+        font-size: 3.6vh;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p{
+        margin-bottom: 3vh;
+
+        font-size: 2.5vh;
+        text-align: center;
+        line-height: 3vh;
+    }
+
+    button{
+        width: 46%;
+        height: 5vh;
+
+        margin-left: 2%;
+        margin-right: 2%;
+
+        background-color: #b1b0c2;
+
+        color: #232225;
+        font-size: 2.7vh;
+        font-weight: bold;
+        text-align: center;
+
+        border-radius: 2.5vh;
+    }
+
+    button:hover{
+        background-color: #8b8b99;
+    }
+}
