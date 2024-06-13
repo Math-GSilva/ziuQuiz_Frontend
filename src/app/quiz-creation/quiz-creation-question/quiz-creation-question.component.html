@@ -1,0 +1,51 @@
+<div class="center-components">
+    <div class="grid-container">
+        <!-- Pergunta / Imagem -->
+        <div class="grid-item grid-center item1">
+            <textarea [(ngModel)]="pergunta" maxlength=256 class="creation-question placeholder-style" placeholder="Insira a pergunta aqui">
+                {{ quiz.questions[question_numb] }}
+            </textarea>
+        </div>
+    
+        <!-- Botão Amarelo -->
+        <div class="grid-item grid-center grid-buttons item2">
+            <mat-icon class="icon_answer" fontIcon="{{ getIcon(0) }}" (click)="changeAnswer(0)"/>
+            <textarea [(ngModel)]="respost1" maxlength=64 class="creation-resp-area placeholder-style" placeholder="Insira uma resposta aqui" [ngStyle]="{'background-color': '#FFB84C'}">
+                {{ quiz.answers[question_numb][0] }}
+            </textarea>
+        </div>
+    
+        <!-- Botão Rosa -->
+        <div class="grid-item grid-center grid-buttons item3">
+            <textarea [(ngModel)]="respost2" maxlength=64 class="creation-resp-area placeholder-style" placeholder="Insira uma resposta aqui" [ngStyle]="{'background-color': '#F266AB'}">
+                {{ quiz.answers[question_numb][1] }}
+            </textarea>
+            <mat-icon class="icon_answer" fontIcon="{{ getIcon(1) }}" (click)="changeAnswer(1)"/>
+        </div>
+    
+        <!-- Botão Azul -->
+        <div class="grid-item grid-center grid-buttons item4">
+            <mat-icon class="icon_answer" fontIcon="{{ getIcon(2) }}" (click)="changeAnswer(2)"/>
+            <textarea [(ngModel)]="respost3" maxlength=64 class="creation-resp-area placeholder-style" placeholder="Insira uma resposta aqui" [ngStyle]="{'background-color': '#2CD3E1'}">
+                {{ quiz.answers[question_numb][2] }}
+            </textarea>
+        </div>
+    
+        <!-- Botão Roxo -->
+        <div class="grid-item grid-center grid-buttons item5">
+            <textarea [(ngModel)]="respost4" maxlength=64 class="creation-resp-area placeholder-style" placeholder="Insira uma resposta aqui" [ngStyle]="{'background-color': '#A459D1'}">
+                {{ quiz.answers[question_numb][3] }}
+            </textarea>
+            <mat-icon class="icon_answer" fontIcon="{{ getIcon(3) }}" (click)="changeAnswer(3)"/>
+        </div>
+
+        <!-- Opções -->
+        <div class="grid-item grid-center item6">
+            <div class="button-align">
+                <button class="button-style color-button1" (click)="deleteQuestion()">Excluir</button>
+                <button class="button-style color-button2" (click)="alterQuestion()" >Alterar</button>
+                <button class="button-style color-button3" (click)="cancelChanges()" >Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<style>
+    .dialog-container{
+        border-color: #ff584c;
+    }
+
+    .delete-button{
+        background-color: #ff584c;
+    }
+
+    .delete-button:hover {
+        background-color: #e0483d;
+    }
+</style>
+
+<div class="dialog-container">
+    <h1>Espere um pouco</h1>
+    <p>Você tem certeza que quer excluir essa pergunta do quiz? Isso não poderá ser desfeito, tome cuidado!</p>
+    <button [mat-dialog-close]=1>Voltar</button>
+    <button class="delete-button" [mat-dialog-close]=0>Continuar</button>
+</div>

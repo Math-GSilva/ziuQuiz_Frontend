@@ -1,0 +1,303 @@
+@import url('../../app.component.scss');
+
+/* * * * * * * * *\
+    Grid  Start
+\* * * * * * * * */
+
+.grid-container {
+    display: grid;
+    width: 70vw;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 24% 24% 14%;
+}
+  
+.grid-item {
+    height: 100%;
+}
+
+.grid-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Question
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+//Option 1
+.item2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+//Option 2
+.item3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+//Option 3
+.item4 {
+    grid-column: 1;
+    grid-row: 3;
+}
+//Option 4
+.item5 {
+    grid-column: 2;
+    grid-row: 3;
+}
+//Buttons
+.item6 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+/* * * * * * * * *\
+     Grid  End
+\* * * * * * * * */
+
+.creation-progressnumb {
+    width: 3vw;
+
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: right;
+
+    color: #696F79;
+    margin-bottom: 0px;
+}
+
+.creation-progressbar {
+    height: 1.5vh;
+    width: 70%;
+
+    margin-left: 1vw;
+
+    border-radius: 0.75vh;
+    background-color: #dfdfdf;
+}
+
+.creation-progressbar-fill{
+    height: 100%;
+
+    border-radius: 0.75vh;
+    background-color: #b3b3b3;
+
+    transition: 0.5s;
+}
+
+.creation-resp-area{
+    width: 100%;
+    height: 100%;
+    padding: 2vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #454b55;
+    font-size: 3vh;
+    line-height: 2.9vh;
+    font-weight: bold;
+    text-align: center;
+
+    border-radius: 2vh;
+    user-select: none;
+
+    transition: 0.3s;
+
+    word-wrap: break-word;
+    word-break: break-all;
+    resize: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.creation-resp-area::-webkit-scrollbar{
+    display: none;
+}
+
+.grid-buttons{
+    padding: 2vh;
+}
+
+.grid-top-buttons{
+    padding-top: 4vh;
+}
+
+.grid-bot-buttons{
+    padding-bottom: 4vh;
+}
+
+.creation-question{
+    width: 92%;
+    height: 90%;
+
+    border-radius: 2vh;
+    padding: 2vh;
+
+    background-color: #FA9673;
+
+    line-height: 3.1vh;
+
+    font-weight: bold;
+    font-size: 3.6vh;
+    text-align: center;
+
+    word-wrap: break-word;
+    word-break: break-all;
+    resize: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.creation-question::-webkit-scrollbar{
+    display: none;
+}
+
+.center-components{
+    height: 100%;
+    width: 100%;
+}
+
+.center-components{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-align {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-style {
+    width: 100%;
+    height: 6vh;
+
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+
+    border-radius: 3vh;
+    opacity: 80%;
+    color: #FFFFFF;
+    font-size: x-large;
+}
+
+.color-button1{
+    background-color: #ff584c;
+}
+
+.color-button1:hover {
+    background-color: #e0483d;
+}
+
+.color-button2{
+    background-color: #41d171;
+}
+
+.color-button2:hover {
+    background-color: #34b35e;
+}
+
+.color-button3{
+    background-color: #4c58ff;
+}
+
+.color-button3:hover {
+    background-color: #3f49d8;
+}
+
+.placeholder-style::placeholder{
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: lighter;
+    color: #131313;
+    opacity: 30%;
+}
+
+.icon_answer{
+    height: 5vh;
+    width: 5vh;
+    margin: 1vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 5vh;
+    color: #605e6d;
+
+    transition: 0.1s;
+}
+
+.icon_answer:hover{
+    cursor: pointer;
+}
+
+.icon_answer:active{
+    font-size: 2vh;
+}
+
+::ng-deep .dialog-panel-style {
+    width: 28vw;
+    height: 31vh;
+
+    .mat-mdc-dialog-surface{
+        background-color: #ffffff00 !important;
+        border-radius: 3vh !important;
+    }
+
+    .dialog-container{
+        width: 100;
+        height: 100%;
+
+        background-color: #FFFFFF;
+
+        border-width: 0.8vh;
+        border-radius: 3vh;
+
+        padding: 3vh;
+    }
+
+    h1{
+        width: 100%;
+
+        margin-bottom: 3vh;
+
+        font-size: 3.6vh;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p{
+        margin-bottom: 3vh;
+
+        font-size: 2.5vh;
+        text-align: center;
+        line-height: 3vh;
+    }
+
+    button{
+        width: 46%;
+        height: 5vh;
+
+        margin-left: 2%;
+        margin-right: 2%;
+
+        background-color: #b1b0c2;
+
+        color: #232225;
+        font-size: 2.7vh;
+        font-weight: bold;
+        text-align: center;
+
+        border-radius: 2.5vh;
+    }
+
+    button:hover{
+        background-color: #8b8b99;
+    }
+}

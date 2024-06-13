@@ -1,0 +1,22 @@
+<div class="grid-container">
+    <div class="grid-item item1">
+        @for (question of quiz.questions; track $index) {
+            <app-creation-questioncard [question]="{
+                pergunta: quiz.questions[$index],
+                resposta: quiz.correct_answers[$index],
+                resposta1: quiz.answers[$index][0],
+                resposta2: quiz.answers[$index][1],
+                resposta3: quiz.answers[$index][2],
+                resposta4: quiz.answers[$index][3],
+            }" [question_number]="$index" (editQuestionEvent)="handleEditQuestion($event)"/>
+        }
+        <div class="add-question-container" (click)="addQuestion()">
+            <p class="add-question-text">Adicionar uma Pergunta</p>
+        </div>
+    </div>
+    <div class="grid-item item2">
+        <button class="button-style color-button1" (click)="goToScreen(0)">Visão Geral do Quiz</button>
+    </div>
+    <div class="grid-item item3"></div>  
+    <div class="grid-item item4"></div>
+</div>
