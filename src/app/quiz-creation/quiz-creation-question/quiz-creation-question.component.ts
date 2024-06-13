@@ -53,7 +53,7 @@ export class QuizCreationQuestionComponent {
   }
 
   deleteQuestion(): void {
-    const dialogRef = this.dialog.open(DialogQuizDelete, { panelClass: 'dialog-panel-style' });
+    const dialogRef = this.dialog.open(DialogQuestionDelete, { panelClass: 'dialog-panel-style' });
 
     dialogRef.afterClosed().subscribe(result => {
       if( result == 0 ){
@@ -67,7 +67,7 @@ export class QuizCreationQuestionComponent {
 
   alterQuestion(): void {
     if( !this.checkIfBlank(0) ){
-      const dialogRef = this.dialog.open(DialogQuizAlter, { panelClass: 'dialog-panel-style' });
+      const dialogRef = this.dialog.open(DialogQuestionAlter, { panelClass: 'dialog-panel-style' });
 
       dialogRef.afterClosed().subscribe(result => {
         if( result == 0 ){
@@ -81,13 +81,13 @@ export class QuizCreationQuestionComponent {
         }
       });
     }else{
-      this.dialog.open(DialogQuizBlank, { panelClass: 'dialog-panel-style' });
+      this.dialog.open(DialogQuestionBlank, { panelClass: 'dialog-panel-style' });
     }
   }
 
   cancelChanges(): void {
     if( !this.checkIfBlank(1) ){
-      const dialogRef = this.dialog.open(DialogQuizCancel, { panelClass: 'dialog-panel-style' });
+      const dialogRef = this.dialog.open(DialogQuestionCancel, { panelClass: 'dialog-panel-style' });
 
       dialogRef.afterClosed().subscribe(result => {
         if( result == 0 ){
@@ -95,7 +95,7 @@ export class QuizCreationQuestionComponent {
         }
       });
     }else{
-      this.dialog.open(DialogQuizBlank, { panelClass: 'dialog-panel-style' });
+      this.dialog.open(DialogQuestionBlank, { panelClass: 'dialog-panel-style' });
     }
   }
 
@@ -139,33 +139,33 @@ export class QuizCreationQuestionComponent {
 
 
 @Component({
-  selector: 'dialog-quiz-delete',
-  templateUrl: 'dialog-quiz-delete.html',
+  selector: 'dialog-question-delete',
+  templateUrl: 'dialog-question-delete.html',
   standalone: true,
   imports: [ MatDialogModule ],
 })
-export class DialogQuizDelete {}
+export class DialogQuestionDelete {}
 
 @Component({
-  selector: 'dialog-quiz-alter',
-  templateUrl: 'dialog-quiz-alter.html',
+  selector: 'dialog-question-alter',
+  templateUrl: 'dialog-question-alter.html',
   standalone: true,
   imports: [ MatDialogModule ],
 })
-export class DialogQuizAlter {}
+export class DialogQuestionAlter {}
 
 @Component({
-  selector: 'dialog-quiz-cancel',
-  templateUrl: 'dialog-quiz-cancel.html',
+  selector: 'dialog-question-cancel',
+  templateUrl: 'dialog-question-cancel.html',
   standalone: true,
   imports: [ MatDialogModule ],
 })
-export class DialogQuizCancel {}
+export class DialogQuestionCancel {}
 
 @Component({
-  selector: 'dialog-quiz-blank',
-  templateUrl: 'dialog-quiz-blank.html',
+  selector: 'dialog-question-blank',
+  templateUrl: 'dialog-question-blank.html',
   standalone: true,
   imports: [ MatDialogModule ],
 })
-export class DialogQuizBlank {}
+export class DialogQuestionBlank {}

@@ -19,6 +19,9 @@ export class QuizCreationMainComponent {
   @Input() quiz!: Quiz;
   @Output() screenChange = new EventEmitter<number>();
   @Output() quizPublish = new EventEmitter<number>();
+  @Output() quizDelete = new EventEmitter<number>();
+  @Output() quizSave = new EventEmitter<number>();
+  @Output() backButton = new EventEmitter<number>();
 
   preset_categories = MOCK_PRESET_CATEGORY;
 
@@ -28,5 +31,21 @@ export class QuizCreationMainComponent {
 
   publishButton(){
     this.quizPublish.emit();
+  }
+
+  excludeButton(){
+    this.quizDelete.emit();
+  }
+
+  saveButton(){
+    this.quizSave.emit();
+  }
+
+  backClicked(){
+    this.backButton.emit();
+  }
+
+  formatTags(tags: string) {
+    this.quiz.tags = tags.split(' ').map(tag => tag.trim().startsWith('#') ? tag.trim() : '#' + tag.trim());
   }
 }

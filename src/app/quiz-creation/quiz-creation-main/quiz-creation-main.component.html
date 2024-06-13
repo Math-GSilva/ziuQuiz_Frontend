@@ -1,7 +1,7 @@
 <div class="quizInfo">
     <div class="left">
         <button>
-            <mat-icon class="arrow-icon" aria-hidden="false" fontIcon="arrow_back"></mat-icon>
+            <mat-icon class="arrow-icon" aria-hidden="false" fontIcon="arrow_back" (click)="backClicked()"></mat-icon>
         </button>
         <input class="input-style" type="text" placeholder="  Insira o nome do seu quiz" [(ngModel)]="quiz.name">
         <div class="choose-image align">
@@ -11,7 +11,7 @@
         <div class="button-align">
             <button class="button-style color-button1" (click)="goToScreen(1)">Editar Perguntas</button>
         </div>
-        <button class="draft-button" type="submit">Salvar Rascunho</button>
+        <button class="draft-button" type="submit" (click)="saveButton()">Salvar Rascunho</button>
     </div>
     <div class="right align align-between">
         <textarea maxlength=256 class="input-style textarea-style" placeholder="Insira a descrição aqui" [(ngModel)]="quiz.description"></textarea>
@@ -21,14 +21,14 @@
                     <mat-icon class="tagIcon color-tag-icon" fontIcon="bookmarks"></mat-icon>
                 </div>
                 <p class="iconText">Tags</p>
-                <input class="input-style input-icon-style" type="text" placeholder="  Insira as Tags" [(ngModel)]="quiz.tags[0]">
+                <input maxlength="20" class="input-style input-icon-style" type="text" placeholder="  Insira as Tags" [ngModel]="quiz.tags.join(' ')" (ngModelChange)="formatTags($event)">
             </div>
             <div class="iconInfo categorySpacer">
                 <div class="iconDiv">
                     <mat-icon class="tagIcon color-category-icon" fontIcon="category"></mat-icon>
                 </div>
                 <p class="iconText">Categorias</p>
-                <select class="input-style input-icon-style" type="text" placeholder="  Insira as Categorias" [(ngModel)]="quiz.category">
+                <select class="input-style input-icon-style" type="text" placeholder=" Insira as Categorias" [(ngModel)]="quiz.category">
                     @for (preset_category of preset_categories; track $index){
                         <option value="{{preset_category.name}}">{{preset_category.name}}</option>
                     }
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="button-align">
-            <button class="button-style color-button2" type="submit">Excluir Quiz</button>
+            <button class="button-style color-button2" type="submit" (click)="excludeButton()">Excluir Quiz</button>
             <button class="button-style color-button3" style="margin-left: 2vw;" type="submit" (click)="publishButton()">Publicar quiz</button>
         </div>
     </div>

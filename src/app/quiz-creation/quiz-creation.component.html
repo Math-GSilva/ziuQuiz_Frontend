@@ -1,6 +1,6 @@
 <app-sidenav>
     @if ( screen == 0 ) {
-        <app-quiz-creation-main [quiz]="quiz" (screenChange)="goToScreen($event)" (quizPublish)="publishButton()"/>
+        <app-quiz-creation-main [quiz]="quiz" (screenChange)="goToScreen($event)" (quizPublish)="publishButton()" (quizDelete)="excludeButton()" (quizSave)="saveButton()" (backButton)="backClicked()"/>
     } @else if ( screen == 1 ) {
         <app-quiz-creation-list [quiz]="quiz" (screenChange)="goToScreen($event)" (editQuestion)="editQuestion($event)"/>
     } @else if ( screen == 2 ) {
