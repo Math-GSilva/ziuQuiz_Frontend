@@ -10,6 +10,7 @@ import { Location } from '@angular/common';
   templateUrl: './search-header.component.html',
   styleUrl: './search-header.component.scss'
 })
+
 export class SearchHeaderComponent {
   constructor(private _location: Location) 
   {}

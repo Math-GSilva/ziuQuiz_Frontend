@@ -1,0 +1,20 @@
+<style>
+    .dialog-container{
+        border-color: #2cd3e1;
+    }
+
+    .alter-button{
+        background-color: #2cd3e1;
+    }
+
+    .alter-button:hover {
+        background-color: #22b9c7;
+    }
+</style>
+
+<div class="dialog-container">
+    <h1>Espere um pouco</h1>
+    <p>Você tem certeza que deseja publicar este quiz? Saiba que ele ainda poderá ser alterado ou excluído por você!</p>
+    <button [mat-dialog-close]=1>Voltar</button>
+    <button class="alter-button" [mat-dialog-close]=0>Continuar</button>
+</div>

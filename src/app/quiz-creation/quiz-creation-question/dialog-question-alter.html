@@ -1,0 +1,20 @@
+<style>
+    .dialog-container{
+        border-color: #52e683;
+    }
+
+    .alter-button{
+        background-color: #52e683;
+    }
+
+    .alter-button:hover {
+        background-color: #45c971;
+    }
+</style>
+
+<div class="dialog-container">
+    <h1>Espere um pouco</h1>
+    <p>Você tem certeza que quer salvar essas alterações? Isso não poderá ser desfeito, tome cuidado!</p>
+    <button [mat-dialog-close]=1>Voltar</button>
+    <button class="alter-button" [mat-dialog-close]=0>Continuar</button>
+</div>

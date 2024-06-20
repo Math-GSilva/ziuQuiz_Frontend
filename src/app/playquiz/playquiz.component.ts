@@ -147,6 +147,5 @@ export class PlayquizComponent implements OnInit {
 
   ngOnInit(){
     this.scoreService.resetScore();
-    console.log("QUIZ INICADO");
   }
 }

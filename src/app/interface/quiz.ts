@@ -9,7 +9,7 @@ export interface Quiz {
     description: string;
     questions: Array<string>;        //['Pergunta 1?', 'Pergunta 2?', 'Pergunta 3?']
     answers: Array<Array<string>>;   //[['Resposta 1A', 'Resposta 1B', 'Resposta 1C', 'Resposta 1D'], ['Resposta 2A', 'Resposta 2B', 'Resposta 2C', 'Resposta 2D'], ['Resposta 3A', 'Resposta 3B', 'Resposta 3C', 'Resposta 3D']]
-    correct_answers: Array<number>;  //[[1],[3],[2]]
+    correct_answers: Array<number>;  //[ 1, 3, 2 ]
     times_played: number;
     ranked_players: number;
     favorites: number;
